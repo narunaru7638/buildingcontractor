@@ -13,12 +13,12 @@
     &__modal{
         display: none;
         width: 90vw;
-        height: 70vh;
+        height: 90vh;
         background: #f6f5f4;
         padding: 15px;
         box-sizing: border-box;
         position: fixed;
-        top: 15vh;
+        top: 5vh;
         left: 5vw;
         z-index: 4;
     }
@@ -27,7 +27,7 @@
         display: none;
         background: rgba(0,0,0, .5);
         background: $color_black4;
-
+        cursor: pointer;
         width: 100vw;
         height: 100vh;
 //        box-sizing: border-box;

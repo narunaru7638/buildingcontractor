@@ -7,6 +7,15 @@
 //    display: block;
 //    overflow: hidden;
 
-
+    cursor: pointer;
+    position: relative;
+    
+    &__img{
+        
+    }
+    
+    &__text{
+        color: $color_black2;
+    }
 
 }

@@ -1,4 +1,12 @@
 .l-contact{
-    margin-top: $space_3l;
+    margin-top: $space_4l;
     margin-bottom: $space_3l;
+    &__title{
+        border-top: 3px solid $color_main_light;
+        border-bottom: 3px solid $color_main_light;
+        padding: $space_m;
+        font-family: $font-family_title;
+        color: $color_main;
+
+    }
 }

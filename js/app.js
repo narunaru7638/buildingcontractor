@@ -6,33 +6,31 @@ $(function () {
         
     var targetHeight = $('.js-float-menu').offset().top;
     $(window).on('scroll', function(){
-        $('.u-float-header-area').toggleClass('u-float-header-area--active',
+        $('.u-float-header-area').toggleClass('u-float-header-area--active',$(this).scrollTop() > targetHeight);
+//        $('.l-hero').toggleClass('l-hero--active',$(this).scrollTop() > targetHeight);
 
-        $(this).scrollTop() > targetHeight);
 
     });
     
+    ////モーダル
     //モーダルをshowする要素をクリックすると、
     $('.js-show-modal').on('click', function(){
-//                 alert('test');
-//        
-//        var modalPositionX =;
-//        var modalPositionY =;
-        
-//        var modalWidth = $('.js-show-modal-target').width();
-//        var windowWidth = $(window).width();
-//        $('.js-show-modal-target').attr('style',
-//                                        'margin-left: ' + (windowWidth/2 - modalWidth/2) + 'px');
-
-        $(this).siblings('.js-show-modal-target').show();
-//        $('.js-show-modal-target').show();
-        $('.js-show-modal-cover').show();
+        //モーダルを表示させる
+        $(this).siblings('.js-show-modal-target').fadeIn();
+        //カバーを表示させる
+        $('.js-show-modal-cover').fadeIn();
     });
-//
-//    $('.js-hide-modal').on('click', function(){
-//        $('.js-show-modal-target').hide();
-//        $('.js-show-modal-cover').hide();
-//    })
+
+    $('.js-hide-modal').on('click', function(){
+        $('.js-show-modal-target').fadeOut("fast");
+        $('.js-show-modal-cover').fadeOut("fast");
+    })
+    
+    $('.js-show-modal-cover').on('click', function(){
+        $('.js-show-modal-target').fadeOut("fast");
+        $('.js-show-modal-cover').fadeOut("fast");
+    })
+
     
     
 });

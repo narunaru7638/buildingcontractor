@@ -1,6 +1,16 @@
-$font-color_default: #666;
-$color_main: #899878;
-$color_accent: #C6AE82;
+//$font-color_default: #666;
+$font-color_default: rgba(0,0,0,0.54);
+
+//$color_main: #899878;
+//$color_main_light: #d7e0ce;
+//$color_accent: #876932;
+
+$color_main: #876932;
+$color_main_light: #e8d3ae;
+$color_accent: #899878;
+$color_accent_light: #d7e0ce;
+
+
 
 $color_black1: rgba(0,0,0,0.87);
 $color_black2: rgba(0,0,0,0.54);

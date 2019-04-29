@@ -1,0 +1,27 @@
+.c-modal{
+    overflow: hidden;
+    border-radius: 5px;
+    
+    &__return-icon{
+        float: right;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    &__title{
+    }
+    
+    &__img{
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &__text{
+        width: 60%;
+        margin: $space_l auto;
+        color: $color_black2;
+    }
+    
+}

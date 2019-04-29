@@ -7,6 +7,7 @@
         font-size: $font-size_l;
         font: $color_white1;
         margin: $space_m;
+        font-weight: 900;
 
         float: left;
         
@@ -15,6 +16,11 @@
     &__link{
         font: $color_white1;
         margin-right: $space_3l;
+        &:hover{
+            color: $color_main;
+        }
+
+        
     }
     &__link:not(:last-child){
     }

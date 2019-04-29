@@ -1,0 +1,35 @@
+.c-newslist{
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    
+    background-color: $color_main_light;
+    
+    overflow-y: scroll;
+    
+    padding: $space_l;
+    
+    &__title{
+        font-weight: 900;
+
+    }
+    
+    &__item{
+        text-align: left;
+        &:not(:first-child){
+            margin-top: $space_s;
+        }
+    }
+    
+    
+    
+    &__link{
+        
+    }
+    
+    &__date{
+        color: $color_main;
+        font-weight: 900;
+    }
+    
+}

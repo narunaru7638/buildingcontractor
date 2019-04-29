@@ -1,0 +1,20 @@
+.c-input{
+    border: 3px solid $color_black3;
+    outline: none;
+
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: $space_l;
+    
+    
+    &:focus {
+        border: 3px solid $color_main_light;
+    }
+    
+    &::placeholder {
+        color: $color_black3;
+    }
+
+
+}
+
