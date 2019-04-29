@@ -1,0 +1,32 @@
+.c-menu{
+    padding-left: 100px;
+    overflow: hidden;
+    margin-bottom: 0px;
+
+    &__item{
+        font-size: $font-size_l;
+        font: $color_white1;
+        margin: $space_m;
+
+        float: left;
+        
+    }
+    
+    &__link{
+        font: $color_white1;
+        margin-right: $space_3l;
+    }
+    &__link:not(:last-child){
+    }
+
+    
+//    &--active{
+//        position: fixed;
+//        top:0px;
+//        z-index: 2;
+//
+//
+//    }
+
+    
+}

@@ -1,0 +1,38 @@
+.c-modal-card{
+    
+    width: calc(33% - #{$space_l});
+    margin: 0 auto $space_l auto;
+    height: auto;
+
+    display: block;
+//    overflow: hidden;
+    color: $color_black1;
+    
+    position: relative;
+    
+    &__modal{
+        display: none;
+        width: 90vw;
+        height: 70vh;
+        background: #f6f5f4;
+        padding: 15px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 15vh;
+        left: 5vw;
+        z-index: 4;
+    }
+    
+    &__modal-cover{
+        display: none;
+        background: rgba(0,0,0, .5);
+        background: $color_black4;
+
+        width: 100vw;
+        height: 100vh;
+//        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;    }
+}

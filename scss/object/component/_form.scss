@@ -1,0 +1,22 @@
+.c-form{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    
+    &__name{
+        width: 100%;
+        margin-bottom: $space_l;
+    }
+    &__email{
+        width: 100%;
+        margin-bottom: $space_l;
+    }
+    &__comment{
+        width: 100%;
+        margin-bottom: $space_l;
+    }
+    &__submit{
+        width: 100%;
+    }
+
+}

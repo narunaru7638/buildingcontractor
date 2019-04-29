@@ -1,0 +1,19 @@
+.l-footer{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: $color_main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_white1;
+    
+    &__text{
+        margin: 0;
+    }
+    
+    &__link{
+        color: $color_white1;
+    }
+    
+}

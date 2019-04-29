@@ -1,0 +1,50 @@
+.l-header{
+    width: 100%;
+    height: 144px;
+    margin-top: $space_l;
+    
+    //    background-color: $color_main;
+    background-color: $color_white1;
+
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
+//    position: fixed;
+//    top:0px;
+//    z-index: 2;
+    transition: .3s;
+    text-align: center;
+
+    &__logo{
+        border: $color_black1 5px solid;
+        color: $color_black1;
+        Width: 60px;
+        height: 60px;
+        border-radius: 40px;
+        font-weight: 600; 
+        text-align: center;
+//        display: flex;
+//        align-items: center;
+//        justify-content: space-between;
+        font-size: $font-size_4l;
+
+
+
+
+
+    }
+    
+    
+    &__sub-title{
+        font-size: $font-size_l;
+        
+    }
+
+    
+    &--active{
+        background-color: $color_white3;
+        
+        transition: .3s;
+
+    }
+}

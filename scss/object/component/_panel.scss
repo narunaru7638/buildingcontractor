@@ -1,0 +1,41 @@
+.c-panel{
+//    width: 30%;
+    width: calc(33% - #{$space_l});
+//    width: 100%;
+    margin: 0 auto $space_l auto;
+    height: auto;
+    
+    display: block;
+    overflow: hidden;
+    
+    
+    
+    &__body{
+        transition: .3s;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+            transition: .3s;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+    }
+    
+//    &__cover{
+//        width:301px;
+//        height:201px;
+//        opacity: 0;
+//        background: black;
+//        color: black;
+//        z-index: 9;
+//        position: absolute;
+//        top: 0;
+//        bottom: 0;
+//        left: 0;
+//        right: 0;
+//    }   
+
+    
+    
+    
+}
