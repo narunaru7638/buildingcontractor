@@ -1,0 +1,140 @@
+.p-company-overview{
+    
+    
+    &__design-box{
+        border: 1px solid $color_black1;
+        margin: $space_4l 0;
+        position: relative;
+        height: 400px;
+    }
+    
+    &__image{
+    }
+    
+    &__image1{
+        width: 30%;
+        position: absolute;
+        bottom: -$space_xxl;
+        right: -$space_xxl;
+        z-index: 2;
+    }
+    
+    &__image2{
+        width: 50%;
+
+        position: absolute;
+        top: -$space_xxl;
+        right: -$space_xxl;
+    }
+
+    &__image3{
+        width: 20%;
+        position: absolute;
+        bottom: -$space_xxl;
+        left: -$space_xxl;
+    }
+    
+    &__design-small-box{
+   
+
+    }
+    
+
+    &__design-small-box1{
+        width:192.59px-$space_xxl;
+        height: 127.92px-$space_xxl;
+        border-bottom: 1px solid $color_white1;
+        border-left: 1px solid $color_white1;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -2px;
+        left: -1px;
+        z-index: 2;
+    }
+    
+    &__design-small-box2{
+        width:480px-$space_xxl;
+        height: 317.33px-$space_xxl;
+        border-top: 1px solid $color_white1;
+        border-right: 1px solid $color_white1;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        z-index: 2;
+    }
+    
+    &__design-small-box3{
+        width:287px-$space_xxl;
+        height: 191px-$space_xxl;
+        border-bottom: 1px solid $color_white1;
+        border-right: 1px solid $color_white1;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        z-index: 2;
+    }
+
+
+    
+    
+    &__title{
+        writing-mode: vertical-rl;
+        font-size: $font-size_3l;
+        z-index: 3;
+        position: absolute;
+        top:-$space_4l*2.5;
+        left:0;
+        font-family: $font-family_title;
+        
+        color: $color_main;
+        color: $color_black2;
+
+        
+    }
+
+    &__message{
+        font-size: $font-size_l;
+        z-index: 3;
+        position: absolute;
+        top:20px;
+        left:140px;
+        font-family: $font-family_title;
+
+        color: $color_main;
+        color: $color_black1;
+        
+        &--emphasis{
+            text-align: left;
+            color: $color_black1;
+            font-weight: 900;
+            display: block;
+
+        }
+
+    }
+    
+    &__sub-message{
+        width: 350px;
+        font-size: $font-size_l;
+        z-index: 3;
+        position: absolute;
+        top:100px;
+        left:150px;
+//        font-family: $font-family_title;
+        font-weight: 900;
+
+//        color: $color_main;
+        color: $color_black2;
+
+        text-align: left;
+    }
+
+
+
+    
+}

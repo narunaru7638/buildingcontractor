@@ -7,7 +7,45 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    position: relative;
+    
     height: 700px;
+    
+    &__title{
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 100px;
+        right: 30px;        
+//        background: rgba(255,255,255,0.4);
+        color: $color_white1;
+//        text-stroke: 5px #FFF;
+        font-size: $font-size_4l;
+        text-shadow: 1px 1px 5px $color_main,
+                    -1px 1px 5px $color_main,
+                    1px -1px 5px $color_main,
+                    -1px -1px 5px $color_main;
+        font-family: $font-family_title;
+        letter-spacing: $space_l;
+        line-height: 150%;
+        &--small{
+            font-size: $font-size_xxl;
+        }
+    }
+    
+    &__message{
+        
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 120px;
+        left: -50px;        
+        background: rgba(255,255,255,0.8);
+        color: $color_black1;
+        font-size: $font-size_l; 
+        padding: $space_3l;
+        line-height: 200%;
+        font-family: $font-family_title;
+
+    }
     
 //    &--active{
 //        background-position: center;

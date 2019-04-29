@@ -7130,7 +7130,32 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   height: 700px; }
+  .l-hero__title {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    color: white;
+    font-size: 46px;
+    text-shadow: 1px 1px 5px #876932, -1px 1px 5px #876932, 1px -1px 5px #876932, -1px -1px 5px #876932;
+    font-family: "Noto Serif SC", serif;
+    letter-spacing: 15px;
+    line-height: 150%; }
+    .l-hero__title--small {
+      font-size: 30px; }
+  .l-hero__message {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 18px;
+    padding: 40px;
+    line-height: 200%;
+    font-family: "Noto Serif SC", serif; }
 
 .l-news {
   margin-top: 50px;
@@ -7192,7 +7217,7 @@ img {
     position: fixed;
     top: 5vh;
     left: 5vw;
-    z-index: 4; }
+    z-index: 22; }
   .c-modal-card__modal-cover {
     display: none;
     background: rgba(0, 0, 0, 0.5);
@@ -7203,7 +7228,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3; }
+    z-index: 21; }
 
 .c-nav-menu {
   font-style: none;
@@ -7343,11 +7368,109 @@ img {
     top: 45%;
     left: 45%; }
 
+.p-company-overview__design-box {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  margin: 50px 0;
+  position: relative;
+  height: 400px; }
+
+.p-company-overview__image1 {
+  width: 30%;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  z-index: 2; }
+
+.p-company-overview__image2 {
+  width: 50%;
+  position: absolute;
+  top: -30px;
+  right: -30px; }
+
+.p-company-overview__image3 {
+  width: 20%;
+  position: absolute;
+  bottom: -30px;
+  left: -30px; }
+
+.p-company-overview__design-small-box1 {
+  width: 162.59px;
+  height: 97.92px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  z-index: 2; }
+
+.p-company-overview__design-small-box2 {
+  width: 450px;
+  height: 287.33px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 2; }
+
+.p-company-overview__design-small-box3 {
+  width: 257px;
+  height: 161px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  z-index: 2; }
+
+.p-company-overview__title {
+  writing-mode: vertical-rl;
+  font-size: 38px;
+  z-index: 3;
+  position: absolute;
+  top: -125px;
+  left: 0;
+  font-family: "Noto Serif SC", serif;
+  color: #876932;
+  color: rgba(0, 0, 0, 0.54); }
+
+.p-company-overview__message {
+  font-size: 18px;
+  z-index: 3;
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  font-family: "Noto Serif SC", serif;
+  color: #876932;
+  color: rgba(0, 0, 0, 0.87); }
+  .p-company-overview__message--emphasis {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 900;
+    display: block; }
+
+.p-company-overview__sub-message {
+  width: 350px;
+  font-size: 18px;
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: left; }
+
 .u-float-header-area {
   background-color: white; }
   .u-float-header-area--active {
     position: fixed;
     top: 0px;
-    z-index: 2;
+    z-index: 11;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7); }
