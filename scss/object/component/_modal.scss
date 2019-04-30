@@ -6,20 +6,27 @@
         float: right;
         font-size: 40px;
         cursor: pointer;
+        color: $color_black2;
+
     }
     
     &__title{
+        text-align: center;
+        color: $color_black2;
+        margin-top:$space_xxl; 
+        font-family: $font-family_title;
+        padding-left: $space_3l;
     }
     
     &__img{
-        width: 60%;
+        width: 80%;
         height: auto;
         display: block;
         margin: 0 auto;
     }
     
     &__text{
-        width: 60%;
+        width: 80%;
         margin: $space_l auto;
         color: $color_black2;
     }

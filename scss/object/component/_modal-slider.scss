@@ -1,0 +1,66 @@
+.c-modal-slider{
+    
+    
+    &__modal{
+        display: none;
+        width: 60vw;
+        height: 88vh;
+        margin: 0 auto;
+        background: #f6f5f4;
+        padding: 15px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 5vh;
+        left: 20vw;
+        z-index: 22;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        @include mq(md) {
+            width: 90vw;
+            height: 60vh;
+            top: 20vh;
+            left: 5vw;
+
+        }
+
+    }
+    
+    &__return-icon{
+        float: right;
+        font-size: 40px;
+        cursor: pointer;
+        color: $color_black2;
+    }
+    
+    &__title{
+        font-family: $font-family_title;
+
+        margin-top: $space_3l;
+        text-align: center;
+    }
+    
+    &__img{
+
+    }
+
+    
+    &__text{
+        font-size: $font-size_l;
+    }
+    
+    &__modal-cover{
+        display: none;
+//        background: rgba(0,0,0, .8);
+        background: $color_black2;
+        cursor: pointer;
+        width: 100vw;
+        height: 100vh;
+        //        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 21;
+    }
+    
+}

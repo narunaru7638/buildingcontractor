@@ -7148,14 +7148,17 @@ img {
   .l-hero__message {
     writing-mode: vertical-rl;
     position: absolute;
-    top: 120px;
-    left: -50px;
+    top: 100px;
+    left: 0px;
     background: rgba(255, 255, 255, 0.8);
     color: rgba(0, 0, 0, 0.87);
     font-size: 18px;
     padding: 40px;
     line-height: 200%;
     font-family: "Noto Serif SC", serif; }
+    @media screen and (max-width: 768px) {
+      .l-hero__message {
+        left: -50px; } }
 
 .l-news {
   margin-top: 50px;
@@ -7171,6 +7174,12 @@ img {
   width: 960px;
   margin: 0 auto;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .c-container {
+      width: 100%; } }
+  @media screen and (max-width: 414px) {
+    .c-container {
+      width: 100%; } }
   .c-container__title {
     font-size: 30px;
     text-align: center;
@@ -7185,18 +7194,22 @@ img {
   margin: 0 auto; }
 
 .c-menu {
-  padding-left: 100px;
-  overflow: hidden;
+  display: flex;
   margin-bottom: 0px; }
   .c-menu__item {
     font-size: 18px;
     font: white;
-    margin: 10px;
-    font-weight: 900;
-    float: left; }
+    margin: 10px 30px;
+    font-weight: 900; }
+    .c-menu__item:first-child {
+      margin-left: 90px; }
+    @media screen and (max-width: 768px) {
+      .c-menu__item {
+        margin: 10px 20px; }
+        .c-menu__item:first-child {
+          margin-left: 50px; } }
   .c-menu__link {
-    font: white;
-    margin-right: 40px; }
+    font: white; }
     .c-menu__link:hover {
       color: #876932; }
 
@@ -7207,21 +7220,29 @@ img {
   display: block;
   color: rgba(0, 0, 0, 0.87);
   position: relative; }
+  @media screen and (max-width: 414px) {
+    .c-modal-card {
+      width: 100%; } }
   .c-modal-card__modal {
     display: none;
-    width: 90vw;
-    height: 90vh;
+    width: 60vw;
+    height: 88vh;
     background: #f6f5f4;
     padding: 15px;
     box-sizing: border-box;
     position: fixed;
     top: 5vh;
-    left: 5vw;
+    left: 20vw;
     z-index: 22; }
+    @media screen and (max-width: 768px) {
+      .c-modal-card__modal {
+        width: 90vw;
+        height: 60vh;
+        top: 20vh;
+        left: 5vw; } }
   .c-modal-card__modal-cover {
     display: none;
-    background: rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.26);
     cursor: pointer;
     width: 100vw;
     height: 100vh;
@@ -7236,6 +7257,9 @@ img {
   margin: 0 auto;
   width: 940px;
   margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .c-nav-menu {
+      width: 900px; } }
 
 .c-panel-container {
   display: flex;
@@ -7278,6 +7302,9 @@ img {
 
 .c-modal-card-container {
   display: flex; }
+  @media screen and (max-width: 414px) {
+    .c-modal-card-container {
+      display: block; } }
 
 .c-card {
   cursor: pointer;
@@ -7291,14 +7318,21 @@ img {
   .c-modal__return-icon {
     float: right;
     font-size: 40px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.54); }
+  .c-modal__title {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 30px;
+    font-family: "Noto Serif SC", serif;
+    padding-left: 40px; }
   .c-modal__img {
-    width: 60%;
+    width: 80%;
     height: auto;
     display: block;
     margin: 0 auto; }
   .c-modal__text {
-    width: 60%;
+    width: 80%;
     margin: 15px auto;
     color: rgba(0, 0, 0, 0.54); }
 
@@ -7368,11 +7402,102 @@ img {
     top: 45%;
     left: 45%; }
 
+.c-modal-slider__modal {
+  display: none;
+  width: 60vw;
+  height: 88vh;
+  margin: 0 auto;
+  background: #f6f5f4;
+  padding: 15px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 5vh;
+  left: 20vw;
+  z-index: 22;
+  border-radius: 5px;
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .c-modal-slider__modal {
+      width: 90vw;
+      height: 60vh;
+      top: 20vh;
+      left: 5vw; } }
+
+.c-modal-slider__return-icon {
+  float: right;
+  font-size: 40px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54); }
+
+.c-modal-slider__title {
+  font-family: "Noto Serif SC", serif;
+  margin-top: 40px;
+  text-align: center; }
+
+.c-modal-slider__text {
+  font-size: 18px; }
+
+.c-modal-slider__modal-cover {
+  display: none;
+  background: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21; }
+
+.c-slider {
+  width: 640px;
+  height: 426px;
+  overflow: hidden;
+  position: relative;
+  top: 15px;
+  margin: 0 auto; }
+  .c-slider__nav {
+    color: #777;
+    position: absolute;
+    top: 180px;
+    font-size: 40px !important;
+    cursor: pointer;
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.87), -1px 1px 0 rgba(0, 0, 0, 0.87), 1px -1px 0 rgba(0, 0, 0, 0.87), -1px -1px 0 rgba(0, 0, 0, 0.87); }
+    .c-slider__nav:hover {
+      color: #e8d3ae; }
+  .c-slider__prev {
+    left: 20px; }
+  .c-slider__next {
+    right: 20px; }
+  .c-slider__container {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    list-style: none;
+    position: relative; }
+  .c-slider__item {
+    width: 640px;
+    height: 426px;
+    background: #333;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 400px;
+    font-size: 5em; }
+  .c-slider__img {
+    width: 100%; }
+
 .p-company-overview__design-box {
   border: 1px solid rgba(0, 0, 0, 0.87);
   margin: 50px 0;
   position: relative;
   height: 400px; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__design-box {
+      width: 640px;
+      margin: 50px auto;
+      height: 266px; } }
 
 .p-company-overview__image1 {
   width: 30%;
@@ -7380,18 +7505,30 @@ img {
   bottom: -30px;
   right: -30px;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__image1 {
+      bottom: -20px;
+      right: -20px; } }
 
 .p-company-overview__image2 {
   width: 50%;
   position: absolute;
   top: -30px;
   right: -30px; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__image2 {
+      top: -20px;
+      right: -20px; } }
 
 .p-company-overview__image3 {
   width: 20%;
   position: absolute;
   bottom: -30px;
   left: -30px; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__image3 {
+      bottom: -20px;
+      left: -20px; } }
 
 .p-company-overview__design-small-box1 {
   width: 162.59px;
@@ -7401,9 +7538,13 @@ img {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: -1px;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__design-small-box1 {
+      width: 108px;
+      height: 65px; } }
 
 .p-company-overview__design-small-box2 {
   width: 450px;
@@ -7416,6 +7557,10 @@ img {
   top: -2px;
   right: -2px;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__design-small-box2 {
+      width: 300px;
+      height: 191px; } }
 
 .p-company-overview__design-small-box3 {
   width: 257px;
@@ -7425,9 +7570,13 @@ img {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   right: -2px;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__design-small-box3 {
+      width: 171px;
+      height: 107px; } }
 
 .p-company-overview__title {
   writing-mode: vertical-rl;
@@ -7439,6 +7588,9 @@ img {
   font-family: "Noto Serif SC", serif;
   color: #876932;
   color: rgba(0, 0, 0, 0.54); }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__title {
+      font-size: 30px; } }
 
 .p-company-overview__message {
   font-size: 18px;
@@ -7449,6 +7601,11 @@ img {
   font-family: "Noto Serif SC", serif;
   color: #876932;
   color: rgba(0, 0, 0, 0.87); }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__message {
+      font-size: 14px;
+      top: 10px;
+      left: 100px; } }
   .p-company-overview__message--emphasis {
     text-align: left;
     color: rgba(0, 0, 0, 0.87);
@@ -7457,7 +7614,7 @@ img {
 
 .p-company-overview__sub-message {
   width: 350px;
-  font-size: 18px;
+  font-size: 14px;
   z-index: 3;
   position: absolute;
   top: 100px;
@@ -7465,6 +7622,12 @@ img {
   font-weight: 900;
   color: rgba(0, 0, 0, 0.54);
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .p-company-overview__sub-message {
+      font-size: 12px;
+      top: 60px;
+      left: 120px;
+      width: 210px; } }
 
 .u-float-header-area {
   background-color: white; }

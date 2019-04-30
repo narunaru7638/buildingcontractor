@@ -6,6 +6,13 @@
         margin: $space_4l 0;
         position: relative;
         height: 400px;
+        @include mq(md) {
+           width: 640px;
+           margin: $space_4l auto;
+           height: 266px;
+
+        }
+
     }
     
     &__image{
@@ -17,6 +24,12 @@
         bottom: -$space_xxl;
         right: -$space_xxl;
         z-index: 2;
+        
+        @include mq(md) {
+            bottom: -$space_xl;
+            right: -$space_xl;
+        }
+        
     }
     
     &__image2{
@@ -25,6 +38,12 @@
         position: absolute;
         top: -$space_xxl;
         right: -$space_xxl;
+        
+        @include mq(md) {
+            top: -$space_xl;
+            right: -$space_xl;
+        }
+
     }
 
     &__image3{
@@ -32,6 +51,13 @@
         position: absolute;
         bottom: -$space_xxl;
         left: -$space_xxl;
+        
+        @include mq(md) {
+            bottom: -$space_xl;
+            left: -$space_xl;
+        }
+
+        
     }
     
     &__design-small-box{
@@ -48,9 +74,16 @@
         display: block;
         box-sizing: border-box;
         position: absolute;
-        bottom: -2px;
+        bottom: -1px;
         left: -1px;
         z-index: 2;
+        
+        @include mq(md) {
+            width:128px-$space_xl;
+            height: 85px-$space_xl;
+        }
+
+        
     }
     
     &__design-small-box2{
@@ -64,6 +97,11 @@
         top: -2px;
         right: -2px;
         z-index: 2;
+        @include mq(md) {
+            width:320px-$space_xl;
+            height: 211px-$space_xl;
+        }
+
     }
     
     &__design-small-box3{
@@ -74,9 +112,15 @@
         display: block;
         box-sizing: border-box;
         position: absolute;
-        bottom: -2px;
+        bottom: -1px;
         right: -2px;
         z-index: 2;
+        
+        @include mq(md) {
+            width:191px-$space_xl;
+            height: 127px-$space_xl;
+        }
+
     }
 
 
@@ -94,6 +138,11 @@
         color: $color_main;
         color: $color_black2;
 
+        @include mq(md) {
+            font-size: $font-size_xxl;
+        }
+
+
         
     }
 
@@ -108,6 +157,12 @@
         color: $color_main;
         color: $color_black1;
         
+        @include mq(md) {
+            font-size: $font-size_m;
+            top: 10px;
+            left: 100px;
+        }
+        
         &--emphasis{
             text-align: left;
             color: $color_black1;
@@ -120,18 +175,26 @@
     
     &__sub-message{
         width: 350px;
-        font-size: $font-size_l;
+        font-size: $font-size_m;
         z-index: 3;
         position: absolute;
         top:100px;
         left:150px;
-//        font-family: $font-family_title;
         font-weight: 900;
 
-//        color: $color_main;
         color: $color_black2;
 
         text-align: left;
+        
+        @include mq(md) {
+            font-size: $font-size_s;
+//            top: 0px;
+            top:60px;
+            left:120px;
+            width:210px;
+
+        }
+        
     }
 
 

@@ -1,5 +1,8 @@
 .c-modal-card-container{
     display: flex;
+    @include mq(sm) {
+        display: block;
+    }
 //    flex-wrap: wrap;
 //    justify-content: space-around;
 }
