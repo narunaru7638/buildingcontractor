@@ -11,6 +11,11 @@
     
     height: 700px;
     
+    @include mq(sm) {
+        height: 500px;
+
+    }
+    
     &__title{
         writing-mode: vertical-rl;
         position: absolute;
@@ -30,6 +35,10 @@
         &--small{
             font-size: $font-size_xxl;
         }
+        @include mq(sm) {
+            font-size: $font-size_xl; 
+        }
+        
     }
     
     &__message{
@@ -47,6 +56,15 @@
         @include mq(md) {
             left: -50px;        
         }
+        
+        @include mq(sm) {
+            font-size: $font-size_s; 
+            padding: $space_l;
+            top: 138px;
+            left: -20px;        
+
+        }
+        
     }
     
 //    &--active{

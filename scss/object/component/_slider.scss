@@ -7,11 +7,20 @@
     top: $space_l;
     margin: 0 auto;
     
+    @include mq(sm) {
+        width:320px;
+        height:213px;
+    }
+    
     &__nav{
         color: #777;
         position: absolute;
         top: 180px;
         font-size: 40px !important;
+        @include mq(sm) {
+            top:90px;
+        }
+
         cursor: pointer;
         z-index: 2;
         color: $color_white1;
@@ -45,6 +54,12 @@
         
         width: 640px;
         height: 426px;
+        
+        @include mq(sm) {
+            width:320px;
+            height:213px;
+        }
+
         background: #333;
         color: #fff;
         float: left;
@@ -56,6 +71,16 @@
     
     &__img{
         width:100%;
+//        height:auto;
+        @include mq(sm) {
+//            width:50%;
+////            height: auto;
+            position:relative;
+////            left:0;
+            top:-187px;
+//            
+        }
+
         
     }
     

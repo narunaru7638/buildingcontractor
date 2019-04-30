@@ -30,14 +30,29 @@ $(function () {
     ////モーダル
     //モーダルスライダーを表示させる要素をクリックすると、
     var cliclItemNum;
-    var $slideContainer = $('.c-slider__container');
-    var slideItemNum = $('.c-slider__item').length;
-    var slideItemWidth = $('.c-slider__item').innerWidth();
-    var slideContainerWidth = slideItemWidth * slideItemNum;
-    var DURATION = 500;
+//    var $slideContainer = $('.c-slider__container');
+//    var slideItemNum = $('.c-slider__item').length;
+//    var slideItemWidth = $('.c-slider__item').innerWidth();
+//    console.log(slideItemWidth);
+//    var slideContainerWidth = slideItemWidth * slideItemNum;
+//    var DURATION = 500;
+    var $slideContainer;
+    var slideItemNum;
+    var slideItemWidth;
+    console.log(slideItemWidth);
+    var slideContainerWidth;
+    var DURATION;
     var currentItemNum;
 
     $('.js-show-modal-slider').on('click', function(e){
+        $slideContainer = $('.c-slider__container');
+        slideItemNum = $('.c-slider__item').length;
+        slideItemWidth = $('.c-slider__item').innerWidth();
+        console.log(slideItemWidth);
+        slideContainerWidth = slideItemWidth * slideItemNum;
+        DURATION = 500;
+        
+        
         //ボタンの通常の処理を止める
         e.preventDefault();
         
@@ -50,7 +65,6 @@ $(function () {
         clickItemNum = $('.js-show-modal-slider').index(this) + 1;
         
         ////スライダー
-        console.log(slideItemNum);
 
         $slideContainer.attr('style', 'width:' + slideContainerWidth + 'px');
         var slideInitialWidth = (clickItemNum-1) * slideItemWidth;
@@ -74,27 +88,37 @@ $(function () {
 
 
     $('.js-slide-next').on('click', function(){
-        console.log(clickItemNum);
 
         if(currentItemNum < slideItemNum){
             $slideContainer.animate({left: '-='+slideItemWidth+'px'}, DURATION);//-=は今のleftからさらに-の意味
             currentItemNum++;
-            console.log(currentItemNum);
 
         }
     });
     $('.js-slide-prev').on('click', function(){
-        console.log(clickItemNum);
 
         
         if(currentItemNum > 1){
             $slideContainer.animate({left: '+='+slideItemWidth+'px'}, DURATION);
             currentItemNum--;
-            console.log(currentItemNum);
 
         }
 
     });
+    
+    
+    
+    // SPメニュー
+    $('.js-toggle-sp-menu').on('click', function () {
+        $(this).toggleClass('active');
+        $('.js-toggle-sp-menu-target').toggleClass('active');
+    });
+    
+    // メニューをクリックしたらメニューを閉じる
+    $('.js-click-close-menu').on('click', function () {
+        $('.js-toggle-sp-menu-target').toggleClass('active');
+    });
+    
     
 //    if(currentItemNum > 1){
 //        $slideContainer.animate({left: '+='+slideItemWidth+'px'}, DURATION);

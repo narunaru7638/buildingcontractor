@@ -5,13 +5,28 @@
         border: 1px solid $color_black1;
         margin: $space_4l 0;
         position: relative;
-        height: 400px;
+        height: 50vh;
+        width: 90vw;
+
+
+
         @include mq(md) {
            width: 640px;
+           width: 90vw;
+
            margin: $space_4l auto;
            height: 266px;
 
         }
+        
+        @include mq(sm) {
+            width: 320px;
+            width: 90vw;
+
+            margin: $space_4l auto;
+            height: 320px;
+        }
+
 
     }
     
@@ -43,6 +58,9 @@
             top: -$space_xl;
             right: -$space_xl;
         }
+        @include mq(sm) {
+//            display: none;
+        }
 
     }
 
@@ -67,8 +85,10 @@
     
 
     &__design-small-box1{
-        width:192.59px-$space_xxl;
-        height: 127.92px-$space_xxl;
+        width: calc(20% - #{$space_xxl});
+
+        height: calc(12vw - #{$space_xxl});
+
         border-bottom: 1px solid $color_white1;
         border-left: 1px solid $color_white1;
         display: block;
@@ -82,13 +102,22 @@
             width:128px-$space_xl;
             height: 85px-$space_xl;
         }
+        @include mq(sm) {
+            width:63px-$space_xl;
+            height: 42px-$space_xl;
+        }
+
 
         
     }
     
     &__design-small-box2{
-        width:480px-$space_xxl;
-        height: 317.33px-$space_xxl;
+        
+        width: calc(50% - #{$space_xxl});
+
+        height: calc(30vw - #{$space_xxl});
+
+        
         border-top: 1px solid $color_white1;
         border-right: 1px solid $color_white1;
         display: block;
@@ -101,12 +130,22 @@
             width:320px-$space_xl;
             height: 211px-$space_xl;
         }
+        @include mq(sm) {
+            width:157px-$space_l;
+            height: 105px-$space_l;
+//            display: none;
+        }
+
 
     }
     
     &__design-small-box3{
-        width:287px-$space_xxl;
-        height: 191px-$space_xxl;
+        
+        width: calc(30% - #{$space_xxl});
+
+        height: calc(18vw - #{$space_xxl});
+
+        
         border-bottom: 1px solid $color_white1;
         border-right: 1px solid $color_white1;
         display: block;
@@ -120,6 +159,11 @@
             width:191px-$space_xl;
             height: 127px-$space_xl;
         }
+        @include mq(sm) {
+            width:95px-$space_xl;
+            height: 63px-$space_xl;
+        }
+
 
     }
 
@@ -131,7 +175,7 @@
         font-size: $font-size_3l;
         z-index: 3;
         position: absolute;
-        top:-$space_4l*2.5;
+        top:-$space_8l;
         left:0;
         font-family: $font-family_title;
         
@@ -141,7 +185,12 @@
         @include mq(md) {
             font-size: $font-size_xxl;
         }
+        @include mq(sm) {
+            font-size: $font-size_l;
+            top:-$space_7l;
+            left:0;
 
+        }
 
         
     }
@@ -157,19 +206,25 @@
         color: $color_main;
         color: $color_black1;
         
+        text-align: left;
+        color: $color_black1;
+        font-weight: 900;
+        display: block;
+
+        
         @include mq(md) {
             font-size: $font-size_m;
             top: 10px;
             left: 100px;
         }
-        
-        &--emphasis{
-            text-align: left;
-            color: $color_black1;
-            font-weight: 900;
-            display: block;
+        @include mq(sm) {
+            width: 250px;
+            top: 70px;
+            left: 40px;
 
         }
+
+        
 
     }
     
@@ -195,8 +250,34 @@
 
         }
         
+        @include mq(sm) {
+//            display: none;//確認用後で消します
+            font-size: $font-size_s;
+            top:170px;
+            left:50px;
+            width:250px;
+
+
+        }
+        
     }
 
+    &__br{
+        display: none;
+        @include mq(sm) {
+            display: block;
+
+        }
+        
+    }
+    
+    &__title-br{
+        @include mq(sm) {
+            display: none;
+
+        }
+
+    }
 
 
     

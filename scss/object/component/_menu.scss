@@ -3,6 +3,10 @@
     display: flex;
     margin-bottom: 0px;
 
+    @include mq(sm) {
+        display: block;
+    }
+    
     &__item{
         font-size: $font-size_l;
         font: $color_white1;
@@ -19,6 +23,17 @@
             &:first-child{
                 margin-left: $space_4l;
             }
+        }
+        @include mq(sm) {
+            font-size: $font-size_3l;
+            font-family: $font-family_title;
+            width: 375px;
+            margin: $space_3l 0;
+            &:first-child{
+                margin-left: 0;
+            }
+
+            
         }
         
     }

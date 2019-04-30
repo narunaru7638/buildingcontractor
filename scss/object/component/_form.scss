@@ -3,6 +3,12 @@
     display: block;
     margin: 0 auto;
     
+    @include mq(sm) {
+        width: 80%;
+
+    }
+
+    
 //    &__name{
 //        border-radius: 5px;
 //        width: 100%;

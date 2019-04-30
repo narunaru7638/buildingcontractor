@@ -32,4 +32,17 @@
         font-weight: 900;
     }
     
+    &__br{
+        display:none;
+    }
+
+    
+    @include mq(sm) {
+        width: 90%;
+        font-size: $font-size_m;
+        &__br{
+            display:block;
+        }
+    }
+    
 }

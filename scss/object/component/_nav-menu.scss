@@ -8,7 +8,9 @@
     @include mq(md) {
         width: 900px;
     }
-    
+    @include mq(sm) {
+        width: 100%;
+    }
     
     margin: 0 auto;
     
