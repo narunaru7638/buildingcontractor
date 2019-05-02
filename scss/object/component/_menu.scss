@@ -3,9 +3,16 @@
     display: flex;
     margin-bottom: 0px;
 
-    @include mq(sm) {
+//    ハンバーガーメニュー用
+    
+    @include mq(md) {
         display: block;
     }
+
+    
+//    @include mq(sm) {
+//        display: block;
+//    }
     
     &__item{
         font-size: $font-size_l;
@@ -18,23 +25,45 @@
             margin-left: $space_8l;
         }
         
-        @include mq(md) {
+        @include mq(lg) {
+            font-size: $font-size_l;
+
             margin: $space_m $space_xl;
             &:first-child{
-                margin-left: $space_4l;
+                margin-left: $space_6l;
             }
         }
-        @include mq(sm) {
+
+        
+//        @include mq(md) {
+//            margin: $space_m $space_xl;
+//            &:first-child{
+//                margin-left: $space_4l;
+//            }
+//        }
+        //ハンバーガーメニュー用
+        @include mq(md) {
             font-size: $font-size_3l;
             font-family: $font-family_title;
-            width: 375px;
+            width: 100%;
             margin: $space_3l 0;
             &:first-child{
                 margin-left: 0;
             }
-
-            
         }
+
+        
+//        @include mq(sm) {
+//            font-size: $font-size_3l;
+//            font-family: $font-family_title;
+//            width: 375px;
+//            margin: $space_3l 0;
+//            &:first-child{
+//                margin-left: 0;
+//            }
+//
+//            
+//        }
         
     }
     

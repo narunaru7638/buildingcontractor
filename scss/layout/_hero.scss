@@ -1,5 +1,12 @@
 .l-hero{
-    background-image: url('../images/hero.jpg');
+    background-image: url('../images/hero_l.jpg');
+    
+    @include mq(md) {
+        background-image: url('../images/hero_s.jpg');
+
+    }
+
+    
     background-attachment: fixed;
 //    background-position: 0 144px;
     background-position: center;
@@ -10,6 +17,13 @@
     position: relative;
     
     height: 700px;
+    
+    
+    @include mq(smd) {
+        height: 500px;
+
+    }
+
     
     @include mq(sm) {
         height: 500px;
@@ -35,6 +49,19 @@
         &--small{
             font-size: $font-size_xxl;
         }
+        
+        @include mq(md) {
+            top: 150px;
+
+        }
+
+        
+        @include mq(smd) {
+            font-size: $font-size_xl; 
+            top: 150px;
+
+        }
+
         @include mq(sm) {
             font-size: $font-size_xl; 
         }
@@ -54,7 +81,16 @@
         line-height: 200%;
         font-family: $font-family_title;
         @include mq(md) {
-            left: -50px;        
+            left: -70px;      
+            top:138px;
+        }
+        
+        @include mq(smd) {
+            font-size: $font-size_s; 
+            padding: $space_l;
+            top: 138px;
+            left: -20px;        
+
         }
         
         @include mq(sm) {
@@ -65,7 +101,14 @@
 
         }
         
+        &-br{
+            display: none;
+        }
+        
     }
+    
+
+
     
 //    &--active{
 //        background-position: center;

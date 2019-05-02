@@ -1,5 +1,11 @@
 .c-modal-card-container{
     display: flex;
+    
+    @include mq(smd) {
+        display: block;
+    }
+
+    
     @include mq(sm) {
         display: block;
     }

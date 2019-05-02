@@ -6,12 +6,22 @@
         margin: $space_4l 0;
         position: relative;
         height: 50vh;
-        width: 90vw;
+        width: 90%;
+//        width: 100%;
+        margin: $space_4l auto;
 
+//        @include mq(lg) {
+////            width: 640px;
+//            width: 90vw;
+//
+//            margin: $space_4l auto;
+//            height: 266px;
+//
+//        }
 
 
         @include mq(md) {
-           width: 640px;
+//           width: 640px;
            width: 90vw;
 
            margin: $space_4l auto;
@@ -19,14 +29,19 @@
 
         }
         
-        @include mq(sm) {
-            width: 320px;
+        //
+        @include mq(smd) {
+//            width: 320px;
             width: 90vw;
 
             margin: $space_4l auto;
             height: 320px;
         }
-
+        
+        @include mq(sm) {
+            //            width: 320px;
+            height: 400px;
+        }
 
     }
     
@@ -45,6 +60,14 @@
             right: -$space_xl;
         }
         
+        @include mq(smd) {
+            bottom: -$space_m;
+            right: -$space_m;
+        }
+        @include mq(sm) {
+            bottom: -$space_s;
+            right: -$space_s;
+        }
     }
     
     &__image2{
@@ -58,6 +81,18 @@
             top: -$space_xl;
             right: -$space_xl;
         }
+        
+        @include mq(smd) {
+            top: -$space_m;
+            right: -$space_m;
+        }
+        
+        @include mq(sm) {
+            top: -$space_s;
+            right: -$space_s;
+        }
+
+
         @include mq(sm) {
 //            display: none;
         }
@@ -74,6 +109,18 @@
             bottom: -$space_xl;
             left: -$space_xl;
         }
+        
+        @include mq(smd) {
+            bottom: -$space_m;
+            left: -$space_m;
+        }
+        
+        @include mq(sm) {
+            bottom: -$space_s;
+            left: -$space_s;
+        }
+
+
 
         
     }
@@ -87,7 +134,9 @@
     &__design-small-box1{
         width: calc(20% - #{$space_xxl});
 
-        height: calc(12vw - #{$space_xxl});
+//        height: calc(12vw - #{$space_xxl});
+        height: 85px;
+
 
         border-bottom: 1px solid $color_white1;
         border-left: 1px solid $color_white1;
@@ -98,13 +147,28 @@
         left: -1px;
         z-index: 2;
         
-        @include mq(md) {
-            width:128px-$space_xl;
-            height: 85px-$space_xl;
+        @include mq(lg) {
+            height: calc(10.8vw - #{$space_xl});
         }
+        
+        
+        @include mq(md) {
+            width: calc(20% - #{$space_xl});
+
+            height: calc(12vw - #{$space_xl});
+        }
+        
+        @include mq(smd) {
+            width: calc(20% - #{$space_m});
+
+            height: calc(12vw - #{$space_m});
+        }
+
+        
         @include mq(sm) {
-            width:63px-$space_xl;
-            height: 42px-$space_xl;
+            width: calc(20% - #{$space_s});
+
+            height: calc(12vw - #{$space_s});
         }
 
 
@@ -115,7 +179,7 @@
         
         width: calc(50% - #{$space_xxl});
 
-        height: calc(30vw - #{$space_xxl});
+        height: 259px;
 
         
         border-top: 1px solid $color_white1;
@@ -126,13 +190,26 @@
         top: -2px;
         right: -2px;
         z-index: 2;
+        
+        @include mq(lg) {
+            height: calc(28.5vw - #{$space_xl});
+
+        }
+
+        
         @include mq(md) {
-            width:320px-$space_xl;
-            height: 211px-$space_xl;
+            width: calc(50% - #{$space_xl});
+
+            height: calc(30vw - #{$space_xl});
+        }
+        @include mq(smd) {
+            width: calc(50% - #{$space_m});
+            height: calc(30vw - #{$space_m});
+            //            display: none;
         }
         @include mq(sm) {
-            width:157px-$space_l;
-            height: 105px-$space_l;
+            width: calc(50% - #{$space_s});
+            height: calc(30vw - #{$space_s});
 //            display: none;
         }
 
@@ -143,7 +220,7 @@
         
         width: calc(30% - #{$space_xxl});
 
-        height: calc(18vw - #{$space_xxl});
+        height:142px;
 
         
         border-bottom: 1px solid $color_white1;
@@ -155,13 +232,26 @@
         right: -2px;
         z-index: 2;
         
+        @include mq(lg) {
+            height: calc(16.5vw - #{$space_xl});
+
+        }
+
+        
         @include mq(md) {
-            width:191px-$space_xl;
-            height: 127px-$space_xl;
+            width: calc(30% - #{$space_xl});
+
+            height: calc(18vw - #{$space_xl});
+        }
+        @include mq(smd) {
+            width: calc(30% - #{$space_m});
+
+            height: calc(18vw - #{$space_m});
         }
         @include mq(sm) {
-            width:95px-$space_xl;
-            height: 63px-$space_xl;
+            width: calc(30% - #{$space_s});
+
+            height: calc(18vw - #{$space_s});
         }
 
 
@@ -181,16 +271,22 @@
         
         color: $color_main;
         color: $color_black2;
+        
+        @include mq(lg) {
+            font-size: $font-size_xxl;
+        }
+
 
         @include mq(md) {
             font-size: $font-size_xxl;
         }
-        @include mq(sm) {
+        @include mq(smd) {
             font-size: $font-size_l;
             top:-$space_7l;
             left:0;
 
         }
+
 
         
     }
@@ -212,17 +308,26 @@
         display: block;
 
         
+        @include mq(lg) {
+            font-size: $font-size_m;
+            top: 0px;
+            left: 120px;
+        }
+
+        
         @include mq(md) {
             font-size: $font-size_m;
             top: 10px;
             left: 100px;
         }
-        @include mq(sm) {
+        
+        @include mq(smd) {
             width: 250px;
             top: 70px;
             left: 40px;
 
         }
+
 
         
 
@@ -230,6 +335,7 @@
     
     &__sub-message{
         width: 350px;
+        width: 35%;
         font-size: $font-size_m;
         z-index: 3;
         position: absolute;
@@ -241,6 +347,15 @@
 
         text-align: left;
         
+        @include mq(lg) {
+            font-size: $font-size_s;
+            //            top: 0px;
+            top:60px;
+            left:120px;
+            width:210px;
+            width:37%;
+        }
+        
         @include mq(md) {
             font-size: $font-size_s;
 //            top: 0px;
@@ -250,32 +365,38 @@
 
         }
         
-        @include mq(sm) {
+        @include mq(smd) {
 //            display: none;//確認用後で消します
             font-size: $font-size_s;
             top:170px;
             left:50px;
             width:250px;
-
-
         }
+        
+        @include mq(sm) {
+            //            width: 320px;
+            width: 80%;
+        }
+
         
     }
 
     &__br{
         display: none;
-        @include mq(sm) {
+        @include mq(smd) {
             display: block;
 
         }
         
+        
     }
     
     &__title-br{
-        @include mq(sm) {
+        @include mq(smd) {
             display: none;
 
         }
+
 
     }
 

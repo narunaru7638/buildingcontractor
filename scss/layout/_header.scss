@@ -15,14 +15,45 @@
     transition: .3s;
     text-align: center;
     
-    
-    @include mq(sm) {
+    //ハンバーガーメニュー用
+    @include mq(md) {
         height: 100px;
     }
     
+//    @include mq(md) {
+//        height: 110px;
+//        position: fixed;
+//        z-index: 11;
+//        padding-top: $space_l;
+//        margin-top: 0;
+//    }
 
 
+    
+//    @include mq(sm) {
+//        height: 100px;
+//    }
+    
 
+
+    &__logo-area{
+        @include mq(md) {
+            height: 110px;
+            position: fixed;
+            top:0;
+            z-index: 11;
+            margin-top: 0;
+            width: 100%;
+            padding-top: $space_l;
+
+            background-color: $color_white1;
+            transition: .3s;
+            text-align: center;
+                
+        }
+
+        
+    }
 
 
     

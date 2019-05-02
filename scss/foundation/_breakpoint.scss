@@ -7,8 +7,9 @@
 // マップ型変数を使うと便利
 $breakpoints: (
     'sm': 'screen and (max-width: 414px)',
+    'smd': 'screen and (max-width: 680px)',
     'md': 'screen and (max-width: 768px)',
-    'lg': 'screen and (max-width: 1000px)',
+    'lg': 'screen and (max-width: 1030px)',
     'xl': 'screen and (max-width: 1200px)',
 ) !default;
 

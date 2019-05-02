@@ -1,16 +1,28 @@
 .c-menu-trigger{
     
+    display: none;
+    
+    @include mq(md) {
+        display: block;
+    }
+
+    
     position: fixed;
-    z-index: 12;
+    z-index: 13;
     width:40px;
     height: 32px;
-    background-color:$color_main; 
-    right: 15px;
-    top: 15px;
+    background-color:rgba(255,255,255,0); 
+    right: 10px;
+    top: 10px;
     
     cursor: pointer;
     
 //    padding:5px;
+    
+    @include mq(sm) {
+        width:30px;
+        height: 22px;
+    }
     
     span {
         display: inline-block;
@@ -27,6 +39,10 @@
         }
         &:nth-of-type(2) {
             top: 14px;
+            @include mq(sm) {
+                top: 9px;
+            }
+
         }
         &:nth-of-type(3) {
             bottom: 0;
@@ -35,12 +51,20 @@
     &.active span {
         &:nth-of-type(1) {
             transform: translateY(12px) rotate(-45deg);
+            @include mq(sm) {
+                transform: translateY(10px) rotate(-45deg);
+            }
+
         }
         &:nth-of-type(2) {
             opacity: 0;
         }
         &:nth-of-type(3) {
             transform: translateY(-15px) rotate(45deg);
+            @include mq(sm) {
+                transform: translateY(-8px) rotate(45deg);
+            }
+
         }
     }
     

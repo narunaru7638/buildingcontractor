@@ -5,13 +5,21 @@
     margin: 0 auto;
     
     width: 940px;
-    @include mq(md) {
-        width: 900px;
+    @include mq(lg) {
+        width: 100%;
+        width: 800px;
+
     }
-    @include mq(sm) {
+    
+    //ハンバーガーメニュー用
+    @include mq(md) {
         width: 100%;
     }
     
+//    @include mq(sm) {
+//        width: 100%;
+//    }
+//    
     margin: 0 auto;
     
 //    position: fixed;

@@ -36,8 +36,16 @@
         display:none;
     }
 
+    @include mq(lg) {
+        width: 90%;
+//        font-size: $font-size_m;
+//        &__br{
+//            display:block;
+//        }
+    }
     
-    @include mq(sm) {
+    
+    @include mq(md) {
         width: 90%;
         font-size: $font-size_m;
         &__br{

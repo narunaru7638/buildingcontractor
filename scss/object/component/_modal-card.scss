@@ -1,6 +1,14 @@
 .c-modal-card{
     
     width: calc(33% - #{$space_l});
+    
+//    min-height: 500px;
+    
+    @include mq(smd) {
+        width: 100%;
+    }
+
+    
     @include mq(sm) {
         width: 100%;
     }
@@ -17,20 +25,20 @@
     &__modal{
         display: none;
         width: 60vw;
-        height: 88vh;
+        height: 96vh;
         background: #f6f5f4;
         padding: 15px;
         box-sizing: border-box;
         position: fixed;
-        top: 5vh;
+        top: 2vh;
         left: 20vw;
         z-index: 22;
         
         @include mq(md) {
-            width: 90vw;
-            height: 60vh;
-            top: 20vh;
-            left: 5vw;
+            width: 100vw;
+            height: 80vh;
+            top: 10vh;
+            left: 0vw;
         }
         
         @include mq(sm) {

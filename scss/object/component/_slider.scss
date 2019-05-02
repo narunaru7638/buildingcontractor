@@ -7,6 +7,12 @@
     top: $space_l;
     margin: 0 auto;
     
+    @include mq(smd) {
+        width:384px;
+        height:256px;
+    }
+
+    
     @include mq(sm) {
         width:320px;
         height:213px;
@@ -17,6 +23,12 @@
         position: absolute;
         top: 180px;
         font-size: 40px !important;
+        
+        @include mq(smd) {
+            top:100px;
+        }
+
+        
         @include mq(sm) {
             top:90px;
         }
@@ -55,6 +67,13 @@
         width: 640px;
         height: 426px;
         
+        
+        @include mq(smd) {
+            width:384px;
+            height:256px;
+        }
+
+        
         @include mq(sm) {
             width:320px;
             height:213px;
@@ -65,20 +84,19 @@
         float: left;
         text-align: center;
         line-height: 400px;
-        font-size: 5em;
-        
+        font-size: 5em;        
     }
     
     &__img{
         width:100%;
-//        height:auto;
-        @include mq(sm) {
-//            width:50%;
-////            height: auto;
+        @include mq(smd) {
             position:relative;
-////            left:0;
+            top:-144px      
+        }
+        
+        @include mq(sm) {
+            position:relative;
             top:-187px;
-//            
         }
 
         
